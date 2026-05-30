@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Civil Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Civil engineer home">
+      <span class="brand-mark">CE</span>
+      <span>Structural Works</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="works.html">Works</a>
+      <a href="#advisor">AI Advisor</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero-image" src="assets/civil-engineering-hero.png" alt="Modern civil engineering structure with chrome steel, concrete, and blue technical accents" />
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Civil Engineer</p>
+        <h1>Bold infrastructure design with precise execution.</h1>
+        <p class="hero-copy">
+          Professional civil engineering support for structures, roads, site development, and project coordination with a sharp focus on safety, durability, and buildability.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#advisor">Ask AI Advisor</a>
+          <a class="button secondary" href="works.html">View Work</a>
+        </div>
+      </div>
+      <div class="hero-metrics" aria-label="Professional highlights">
+        <div><strong>12+</strong><span>Project Types</span></div>
+        <div><strong>Site</strong><span>Focused Delivery</span></div>
+        <div><strong>Code</strong><span>Ready Drawings</span></div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div>
+        <p class="section-kicker">Engineering Profile</p>
+        <h2>Practical planning, clear drawings, and disciplined site decisions.</h2>
+      </div>
+      <p>
+        I help clients move from concept to construction with technical confidence. The work combines structural judgement, quantity awareness, contractor coordination, and clean documentation that keeps teams aligned.
+      </p>
+    </section>
+
+    <section id="services" class="section dark-band">
+      <div class="section-heading">
+        <p class="section-kicker">Services</p>
+        <h2>Engineering support built for real-world constraints.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="card-number">01</span><h3>Structural Planning</h3><p>Concept layouts, structural framing logic, load-path thinking, and coordination-ready design inputs.</p></article>
+        <article class="service-card"><span class="card-number">02</span><h3>Site Development</h3><p>Levels, drainage, roadworks, access planning, and practical construction sequencing for efficient delivery.</p></article>
+        <article class="service-card"><span class="card-number">03</span><h3>Quantity & Cost Review</h3><p>Material takeoffs, BOQ support, rate checks, and value-focused review before work reaches the site.</p></article>
+        <article class="service-card"><span class="card-number">04</span><h3>Project Coordination</h3><p>Drawing review, site observations, contractor coordination, and issue tracking from start to finish.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section split-section">
+      <div class="section-heading">
+        <p class="section-kicker">Work Preview</p>
+        <h2>Strong technical foundations for public, commercial, and residential work.</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-row"><span>Bridge & Roadway</span><h3>Urban Connector Upgrade</h3><p>Alignment support, retaining interface checks, drainage review, and staging coordination.</p></article>
+        <article class="project-row"><span>Commercial</span><h3>Mid-Rise Concrete Frame</h3><p>Column grid rationalization, slab coordination, and constructability review for shell works.</p></article>
+        <article class="project-row"><span>Residential</span><h3>Premium Villa Development</h3><p>Site grading, foundation coordination, service routes, and civil scope documentation.</p></article>
+        <a class="text-link" href="works.html">Open full works page</a>
+      </div>
+    </section>
+
+    <section id="advisor" class="advisor-section">
+      <div class="advisor-copy">
+        <p class="section-kicker">AI Advisor</p>
+        <h2>Ask quick civil engineering project questions.</h2>
+        <p>
+          Get instant guidance for planning, site checks, materials, documents, and common project risks. For final design decisions, always confirm with a licensed local engineer and applicable codes.
+        </p>
+      </div>
+      <div class="advisor-panel" aria-label="AI advisor chat">
+        <div class="advisor-header">
+          <span class="advisor-dot"></span>
+          <div>
+            <strong>Engineering AI Advisor</strong>
+            <small>Local project assistant</small>
+          </div>
+        </div>
+        <div class="advisor-messages" id="advisorMessages">
+          <div class="message bot">Hello. Ask about foundations, concrete, drainage, quantities, site planning, or project documentation.</div>
+        </div>
+        <div class="advisor-prompts" aria-label="Suggested questions">
+          <button type="button" data-question="What should I check before starting a building foundation?">Foundation checks</button>
+          <button type="button" data-question="How can I reduce construction cost without lowering quality?">Cost control</button>
+          <button type="button" data-question="What documents are needed before site work begins?">Site documents</button>
+        </div>
+        <form class="advisor-form" id="advisorForm">
+          <input id="advisorInput" type="text" placeholder="Ask the AI advisor..." autocomplete="off" />
+          <button type="submit">Ask</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="process" class="section process-band">
+      <div class="section-heading">
+        <p class="section-kicker">Process</p>
+        <h2>Clear steps from first survey to final handover.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><span></span><h3>Assess</h3><p>Review site data, design intent, constraints, codes, and the decision points that matter most.</p></div>
+        <div class="timeline-item"><span></span><h3>Design</h3><p>Prepare practical engineering options with drawings, quantities, and buildability in mind.</p></div>
+        <div class="timeline-item"><span></span><h3>Coordinate</h3><p>Align consultants, contractors, and site teams so technical changes do not become delays.</p></div>
+        <div class="timeline-item"><span></span><h3>Deliver</h3><p>Support execution with disciplined checks, reports, and closeout documentation.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-copy">
+        <p class="section-kicker">Contact</p>
+        <h2>Ready to build with confidence?</h2>
+        <p>Share your drawings, site details, or project brief and get a practical engineering response.</p>
+      </div>
+      <form class="contact-form">
+        <label>Name<input type="text" name="name" placeholder="Your name" /></label>
+        <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+        <label>Project Type<select name="project-type"><option>Structural review</option><option>Site development</option><option>Quantity estimate</option><option>Project coordination</option></select></label>
+        <label>Message<textarea name="message" rows="4" placeholder="Tell me about your project"></textarea></label>
+        <button type="submit">Send Inquiry</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Structural Works</span>
+    <span>Civil engineering portfolio</span>
+  </footer>
+
+  <script>
+    const contactForm = document.querySelector(".contact-form");
+    const contactStatus = document.querySelector(".form-status");
+    const advisorForm = document.getElementById("advisorForm");
+    const advisorInput = document.getElementById("advisorInput");
+    const advisorMessages = document.getElementById("advisorMessages");
+    const suggestedButtons = document.querySelectorAll("[data-question]");
+
+    const advisorAnswers = [
+      {
+        keys: ["foundation", "footing", "soil"],
+        text: "Before foundation work, confirm soil bearing capacity, site levels, water table, excavation stability, column positions, reinforcement drawings, concrete grade, and inspection approvals."
+      },
+      {
+        keys: ["cost", "budget", "reduce", "saving"],
+        text: "Control cost by freezing drawings early, comparing quantities with BOQ, reducing rework, planning material delivery, standardizing sizes, and approving substitutions only after technical review."
+      },
+      {
+        keys: ["document", "drawing", "permit", "approval"],
+        text: "Before site work, keep approved drawings, permits, survey data, soil report, BOQ, method statements, safety plan, inspection checklist, and contractor scope documents ready."
+      },
+      {
+        keys: ["concrete", "cement", "mix", "slab"],
+        text: "For concrete quality, verify mix design, batching accuracy, slump, formwork support, cover blocks, vibration, curing time, cube tests, and weather protection during placement."
+      },
+      {
+        keys: ["drainage", "water", "road", "level"],
+        text: "For drainage, check finished levels, natural flow direction, invert levels, pipe slope, outfall location, silt traps, surface runoff paths, and maintenance access."
+      }
+    ];
+
+    function addMessage(text, type) {
+      const bubble = document.createElement("div");
+      bubble.className = `message ${type}`;
+      bubble.textContent = text;
+      advisorMessages.appendChild(bubble);
+      advisorMessages.scrollTop = advisorMessages.scrollHeight;
+    }
+
+    function getAdvisorReply(question) {
+      const normalized = question.toLowerCase();
+      const match = advisorAnswers.find((answer) => answer.keys.some((key) => normalized.includes(key)));
+      return match ? match.text : "Good question. Start by defining the project type, location, drawings available, soil/site conditions, safety risks, and approval requirements. Then ask a licensed local engineer to verify code-specific decisions.";
+    }
+
+    function askAdvisor(question) {
+      const cleanQuestion = question.trim();
+      if (!cleanQuestion) return;
+      addMessage(cleanQuestion, "user");
+      window.setTimeout(() => addMessage(getAdvisorReply(cleanQuestion), "bot"), 250);
+    }
+
+    advisorForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      askAdvisor(advisorInput.value);
+      advisorInput.value = "";
+    });
+
+    suggestedButtons.forEach((button) => {
+      button.addEventListener("click", () => askAdvisor(button.dataset.question));
+    });
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      contactStatus.textContent = "Inquiry ready. I will review your project details and respond soon.";
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
